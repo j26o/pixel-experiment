@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Pixel Test</title>
+
+<link type="text/css" href="css/no-theme/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+<link type="text/css" href="css/bg-styles.css" rel="stylesheet" />
+
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+
+<script type="text/javascript" src="http://meta100.github.com/mColorPicker/javascripts/mColorPicker_min.js" charset="UTF-8"></script>
+
+<script src="js/ui/jquery.ui.core.js"></script>
+<script src="js/ui/jquery.ui.widget.js"></script>
+<script src="js/ui/jquery.ui.mouse.js"></script>
+<script src="js/ui/jquery.ui.slider.js"></script>
+
+<script src="js/colour.js"></script>
+<script src="js/block.js"></script>
+<script src="js/grid.js"></script>
+
+<script src="js/main.js"></script>
+
+</head>
+<body>
+	<canvas id="pixelCanvas" width="1000" height="1000" style="position:absolute;">
+        <!-- Insert fallback content here -->
+    </canvas>
+    <canvas id="gradCv" width="1" height="700" style="position:absolute;">
+        <!-- Insert fallback content here -->
+    </canvas>
+    <div class="controls">
+    	<h2>Controls</h2>
+        <div class="ctrl-grp">
+        	<h3>Random Color range:</h3>
+			<div id="random-range"></div>
+        	<input id="randrange" value="" />
+        </div>
+        <div class="ctrl-grp">
+        	<h3>Hit Range:</h3>
+			<div id="hit-range"></div>
+        	<input id="hitrange" value="" />
+        </div>
+        <div class="ctrl-grp">
+        	<h3>Randomize Hit:</h3>
+			<input id="randhit" type="checkbox" />
+        </div>
+        <div class="ctrl-grp">
+        	<h3>Fade Speed:</h3>
+			<div id="fade-speed"></div>
+        	<input id="fadespeed" value="" />
+        </div>
+        <div class="ctrl-grp">
+        	<h3>Color Controls:</h3>
+            <p>Top Color:</p>
+            <input id="t-color" value="rgb(243, 112, 83)" class="colors" />
+            <input id="color_t" type="color" value="rgb(243, 112, 83)" data-text="hidden" class="color-box" />
+            <p>Bottom Color:</p>
+            <input id="b-color" value="rgb(55, 0, 0)" class="colors" />
+            <input id="color_b" type="color" value="rgb(55, 0, 0)" data-text="hidden" class="color-box" />
+            <p>Hit Color:</p>
+            <input id="h-color" value="rgb(255, 177, 160)" class="colors" />	
+            <input id="color_h" type="color" value="rgb(255, 177, 160)" data-text="hidden" class="color-box" />	
+        	
+        </div>
+    </div>
+</body>
+</html>
